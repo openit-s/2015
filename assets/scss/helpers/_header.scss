@@ -1,0 +1,26 @@
+.navigation { @include transition(.4s); background-color: #fff; position: fixed; width: 100%; z-index: 999;
+  .navbar { @include border-radius(0px); border: none; display: table; margin-bottom: 0; min-height: inherit; padding: 35px 0; width: 100%;
+    .navbar-header {
+      .navbar-brand { padding: 0; height: inherit; }
+    }
+    .navigation-wrapper { display: table-cell; vertical-align: middle; }
+    .navbar-collapse { float: none !important; padding-right: 0; //vertical-align: middle;
+      .nav { float: right;// display: table-cell !important;
+        li { padding-left: 20px;
+          &.active {
+            a { color: $color-default;
+              &:after { background-color: $color-default; width: 100%; }
+            }
+          }
+          a { @include transition(.8s); color: $color-grey-medium; display: block; font-size: 16px; font-weight: bold; padding: 5px 0; position: relative;
+            &:after { @include transition(.8s); @include transition-timing-function(cubic-bezier(0.25,0,0,1)); background-color: $color-default; content: ""; left: 0; height: 2px; width: 0%; position: absolute; bottom: 0; }
+            &:hover { background-color: transparent; color: $color-default;
+              &:after { background-color: $color-default; width: 100%; }
+            }
+            &:active, &:focus { background-color: transparent;  }
+          }
+        }
+      }
+    }
+  }
+}

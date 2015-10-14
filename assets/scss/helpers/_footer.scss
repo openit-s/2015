@@ -1,0 +1,19 @@
+footer { font-size: 18px; overflow: hidden;
+  a { color: $color-default; }
+  h2 {
+    a { color: $color-grey-dark; }
+  }
+  .footer-bottom {
+    .copyright { color: $color-grey-medium; font-weight: bold; position: relative; }
+    .contact {
+      &.float { position: relative; top: -40px; }
+      > span { display: block; margin-top: 15px; }
+      h3 { color: $color-default; font-size: 48px; font-weight: bold; }
+      .social {
+        a { color: $color-grey-dark; display: block; font-size: 36px; font-weight: bold; margin-bottom: -5px; text-decoration: underline;
+          &:hover { color: $color-default; }
+        }
+      }
+    }
+  }
+}

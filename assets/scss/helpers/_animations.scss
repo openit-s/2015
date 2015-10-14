@@ -1,0 +1,46 @@
+@media (min-width: 992px) {
+  // FADE IN
+
+    .animation-fade-in { @include animation-name(animation-fade-in); @include animation-duration(.2s); @include keyframes(animation-fade-in); }
+    @include keyframes(animation-fade-in) {
+      0% {
+        @include opacity(0);
+      }
+      100% {
+        @include opacity(1);
+      }
+    }
+
+  // FADE OUT
+
+    .animation-fade-out { @include animation-name(animation-fade-out); @include animation-duration(.2s); @include keyframes(animation-fade-out); }
+    @include keyframes(animation-fade-out) {
+      0% {
+        @include opacity(1);
+      }
+      100% {
+        @include opacity(0);
+      }
+    }
+
+  //.bounce-top { @include animation-name(bounce-top); @include animation-duration(.6s); @include keyframes(bounce-top); }
+  //@include keyframes(bounce-top) {
+  //  0% {
+  //    @include opacity(1);
+  //  }
+  //  100% {
+  //    @include opacity(0);
+  //  }
+  //}
+
+
+
+    .fade-in { -webkit-opacity: 0 !important; opacity: 0 !important;
+      &.navigation { margin-top: -20px; }
+    }
+
+  //.fade { -webkit-opacity: 1 !important; opacity: 1 !important; }
+
+    .move { @include transition(.4s); margin-left: 50px; position: relative; }
+}
+
