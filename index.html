@@ -585,6 +585,7 @@
                 <header>
                     <h2><a href="#contact" class="roll">Contact & Location</a></h2>
                 </header>
+
                 <div class="find-way">
                     <div class="row">
                         <div class="col-md-5 col-sm-7 col-md-offset-7 col-sm-offset-5">
@@ -879,9 +880,9 @@
 
 <!-- Google Maps -->
 <script type="text/javascript">
-    var _latitude = 34.038405;
-    var _longitude = -117.946944;
-    var markerAddress = "16-22 Great Russell St,<br>Los Angeles, United States";
+    var _latitude = 37.516568;
+    var _longitude = 127.10082499999999;
+    var markerAddress = "대한민국 서울특별시 송파구 신천동 삼성SDS";
     var mapStyles = [{featureType:'water',elementType:'all',stylers:[{hue:'#d7ebef'},{saturation:-5},{lightness:54},{visibility:'on'}]},{featureType:'landscape',elementType:'all',stylers:[{hue:'#eceae6'},{saturation:-49},{lightness:22},{visibility:'on'}]},{featureType:'poi.park',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-81},{lightness:34},{visibility:'on'}]},{featureType:'poi.medical',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-80},{lightness:-2},{visibility:'on'}]},{featureType:'poi.school',elementType:'all',stylers:[{hue:'#c8c6c3'},{saturation:-91},{lightness:-7},{visibility:'on'}]},{featureType:'landscape.natural',elementType:'all',stylers:[{hue:'#c8c6c3'},{saturation:-71},{lightness:-18},{visibility:'on'}]},{featureType:'road.highway',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-92},{lightness:60},{visibility:'on'}]},{featureType:'poi',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-81},{lightness:34},{visibility:'on'}]},{featureType:'road.arterial',elementType:'all',stylers:[{hue:'#dddbd7'},{saturation:-92},{lightness:37},{visibility:'on'}]},{featureType:'transit',elementType:'geometry',stylers:[{hue:'#c8c6c3'},{saturation:4},{lightness:10},{visibility:'on'}]}];
 
     google.maps.event.addDomListener(window, 'load', initSubmitMap());
@@ -889,7 +890,7 @@
     function initSubmitMap(){
         var mapCenter = new google.maps.LatLng(_latitude,_longitude);
         var mapOptions = {
-            zoom: 15,
+            zoom: 16,
             center: mapCenter,
             disableDefaultUI: false,
             scrollwheel: false,
