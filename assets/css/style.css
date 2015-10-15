@@ -529,7 +529,7 @@ p {
   border: none;
   border-bottom: 2px solid transparent;
   color: #1c1c1c;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
   padding: 0 0 10px 0;
 }
@@ -603,7 +603,7 @@ p {
   transition: 0.4s;
   color: #747474;
   display: inline-block;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: bold;
 }
 .panel-group .panel .panel-header .time i {
